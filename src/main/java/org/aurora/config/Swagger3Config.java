@@ -32,11 +32,11 @@ import springfox.documentation.spring.web.plugins.Docket;
 @Configuration
 public class Swagger3Config {
 
-	@Bean
-	public Docket createRestApi(){
-		return new Docket(DocumentationType.OAS_30)
-				.select()
-				.apis(RequestHandlerSelectors.withMethodAnnotation(Operation.class))
-				.build();
-	}
+    @Bean
+    public Docket createRestApi() {
+        return new Docket(DocumentationType.OAS_30)
+                .select()
+                .apis(RequestHandlerSelectors.withMethodAnnotation(Operation.class))
+                .build();
+    }
 }

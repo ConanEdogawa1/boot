@@ -37,9 +37,8 @@ dependencies {
     implementation('org.springframework.boot:spring-boot-starter-undertow')
     implementation('org.springframework.boot:spring-boot-starter-data-redis:2.3.10.RELEASE')
     // security
-    implementation('org.springframework.security:spring-security-core')
-    implementation('org.springframework.security:spring-security-web')
-    implementation('org.springframework.security:spring-security-config')
+    // spring-boot-starter-security 包含 'spring-security-web' 和 'spring-security-config'
+    implementation('org.springframework.boot:spring-boot-starter-security')
     // lombok
     compileOnly('org.projectlombok:lombok:1.18.20')
     // swagger3
