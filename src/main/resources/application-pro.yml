@@ -1,0 +1,7 @@
+server:
+  port: 5520
+spring:
+  application:
+    name: boot
+logging:
+  config: classpath:log4j2-spring.xml
